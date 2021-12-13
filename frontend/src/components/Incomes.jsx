@@ -12,9 +12,9 @@ import Card from '@mui/material/Card';
 import IncLogo from './income-logo.png';
 
 export default function Income(props) {
-  const [ incomeAmt, setincomeAmt ] = useState("");
-  const [ incomeType, setincomeType ] = useState("");
-  const [ incomeDate, setincomeDate ] = useState("");
+  const [ incomeAmt, setIncomeAmt ] = useState("");
+  const [ incomeType, setIncomeType ] = useState("");
+  const [ incomeDate, setIncomeDate ] = useState("");
   const { count, setCount } = useContext(Context);
 
 
@@ -57,9 +57,9 @@ export default function Income(props) {
         <div className="form">
           <Form.Group as={Col} sm={15} controlId="formGridCity">
             <Form.Label>Amount</Form.Label>
-              <Form.Control type="text" placeholder="ex. 1000" value={incomeAmt} onChange={(event) => setincomeAmt(event.target.value)}/>
+              <Form.Control type="text" placeholder="ex. 1000" value={incomeAmt} onChange={(event) => setIncomeAmt(event.target.value)}/>
           </Form.Group>
-          <Form.Group as={Col} sm={15} controlId="formGridState" value={incomeType} onChange={(event) => setincomeType(event.target.value)}>
+          <Form.Group as={Col} sm={15} controlId="formGridState" value={incomeType} onChange={(event) => setIncomeType(event.target.value)}>
             <Form.Label>Type</Form.Label>
             <Form.Select defaultValue="Choose...">
               <option>Select...</option>
@@ -78,7 +78,7 @@ export default function Income(props) {
           </Form.Group>
           <Form.Group as={Col} sm={15} controlId="formGridCity">
             <Form.Label>Date</Form.Label>
-            <Form.Control type="date" placeholder="ex. YYYY/MM/DD" value={incomeDate} onChange={(event) => setincomeDate(event.target.value)}/>
+            <Form.Control type="date" placeholder="ex. YYYY/MM/DD" value={incomeDate} onChange={(event) => setIncomeDate(event.target.value)}/>
           </Form.Group>
           <div className="count">
             {count}{setCount}

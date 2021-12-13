@@ -1,8 +1,6 @@
 import Form from 'react-bootstrap/Form';
-import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
-// import FloatingLabel from 'react-bootstrap/esm/FloatingLabel';
 import './expense.css';
 import axios from 'axios';
 import { useEffect, useState, useContext } from 'react';
@@ -12,11 +10,8 @@ import Income from './Incomes';
 import { getUser } from '../utils/userAuth';
 import * as React from 'react';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
-import ExpLogo from './expense-logo.png';
+import ExpLogo from '../../public/income-logo.png';
 
 export default function Expenses(props) {
   const [ expAmt, setExpAmt ] = useState("");
@@ -33,8 +28,6 @@ export default function Expenses(props) {
     axios.get(sumDataURL).then((res) => {
       console.log(res.data);
       const totalCountExp = res.data.total;
-      //use state count
-     //setCount(totalCountExp);
       })
     }
   }, [user])
@@ -51,7 +44,7 @@ export default function Expenses(props) {
       console.log(data);
       navigate('/dashboard');
     } catch (error) {
-      console.log("error: ++++++++", 'There already exists an account with this name or email');
+      console.log(error, 'There already exists an account with this name or email');
     }
   };
 
