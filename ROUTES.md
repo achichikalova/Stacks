@@ -1,9 +1,9 @@
-#API ROUTES
+# API ROUTES
 
--users
--expenses
--income
--categories
+- users
+- expenses
+- income
+- categories
 
 /api/users
 /api/users/:user_email
