@@ -32,6 +32,9 @@ Wants to see patterns in their spending.
 ### Profile Page
 ![Profile Page](/frontend/public/static/images/readme/profile.png)
 
+### Backstage process
+If you'd like to take a look on how we did it, from what we started, the project workflow, then you are welcome - [Stack's Chronicles](https://docs.google.com/presentation/d/1ErR_fxTbVAAPZQFlqAeu12MP0Up0pyE2Zz6s-EaRklc/edit?usp=sharing).
+
 ## Getting Started
 
 1. Fork this repository, then clone your fork of this repository.
