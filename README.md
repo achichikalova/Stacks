@@ -1,4 +1,5 @@
 # Stacks
+We had only one week to build this Full Stack Web Application from scratch.
 ## Project description
 A budgeting app designed to help one track their expenses and user patterns/trends to help maintain finances.
 ### Target audience 
